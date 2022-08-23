@@ -174,16 +174,36 @@
 
       <div class="grid__images">
         <!-- mobile images -->
-        <img src="/assets/mobile/image-gallery-milkbottles.jpg" alt="" class="mobile__picture" />
+        <!-- <img src="/assets/mobile/image-gallery-milkbottles.jpg" alt=""  />
         <img src="/assets/mobile/image-gallery-orange.jpg" alt="" class="mobile__picture" />
         <img src="/assets/mobile/image-gallery-cone.jpg" alt="" class="mobile__picture" />
-        <img src="/assets/mobile/image-gallery-sugar-cubes.jpg" alt="" class="mobile__picture" />
+        <img src="/assets/mobile/image-gallery-sugar-cubes.jpg" alt="" class="mobile__picture" /> -->
+        <picture>
+          <source   media="(min-width: 375px)" srcset="./assets/mobile/image-gallery-milkbottles.jpg">
+          <source  media="(min-width: 1440px)" srcset="./assets/desktop/image-gallery-milkbottles.jpg">
+          <img width="100%" src="./assets/desktop/image-gallery-milkbottles.jpg" alt="">
+        </picture>
+        <picture>
+          <source   media="(min-width: 375px)" srcset="./assets/mobile/image-gallery-orange.jpg">
+          <source  media="(min-width: 1440px)" srcset="./assets/desktop/image-gallery-orange.jpg">
+          <img width="100%"  src="./assets/desktop/image-gallery-orange.jpg" alt="">
+        </picture>
+        <picture>
+          <source   media="(min-width: 375px)" srcset="./assets/mobile/image-gallery-cone.jpg">
+          <source  media="(min-width: 1440px)" srcset="./assets/desktop/image-gallery-cone.jpg">
+          <img width="100%" src="./assets/desktop/image-gallery-cone.jpg" alt="">
+        </picture>
+        <picture>
+          <source  media="(min-width: 375px)" srcset="./assets/mobile/image-gallery-sugar-cubes.jpg">
+          <source  media="(min-width: 1440px)" srcset="./assets/desktop/image-gallery-sugarcubes.jpg">
+          <img width="100%" src="./assets/desktop/image-gallery-sugarcubes.jpg" alt="">
+        </picture>
         
         <!-- desktop images -->
-        <img src="/assets/desktop/image-gallery-milkbottles.jpg" alt="" class="desktop__picture" />
+        <!-- <img src="/assets/desktop/image-gallery-milkbottles.jpg" alt="" class="desktop__picture" />
         <img src="/assets/desktop/image-gallery-orange.jpg" alt="" class="desktop__picture" />
         <img src="/assets/desktop/image-gallery-cone.jpg" alt="" class="desktop__picture" />
-        <img src="/assets/desktop/image-gallery-sugarcubes.jpg" alt="" class="desktop__picture" />
+        <img src="/assets/desktop/image-gallery-sugarcubes.jpg" alt="" class="desktop__picture" /> -->
       </div>
     </main>
 

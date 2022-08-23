@@ -3,26 +3,10 @@
 .grid__images {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-
-  .mobile__picture {
-      display: block;
-    }
-
-  .desktop__picture {
-    display: none;
-  }
 }
 
 @include img-sm {
   .grid__images {
     grid-template-columns: repeat(4,1fr);
-    
-    .mobile__picture {
-      display: none;
-    }
-
-    .desktop__picture {
-      display: block;
-    }
   }
 }
