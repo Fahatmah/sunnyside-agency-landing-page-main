@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Sunnyside Agency Landing Page]()
-- Live Site URL: [Sunnyside Agency Landing Page]()
+- Solution URL: [Sunnyside Agency Landing Page](https://github.com/Fahatmah/sunnyside-agency-landing-page-main.git)
+- Live Site URL: [Sunnyside Agency Landing Page](https://sunnyside-agency-fem-challenge.netlify.app/)
 
 ## My process
 
