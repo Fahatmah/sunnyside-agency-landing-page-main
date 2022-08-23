@@ -51,6 +51,7 @@ Users should be able to:
 ### Useful resources
 
 - [Kevin Powell - Flexbox patterns](https://www.youtube.com/watch?v=vQAvjof1oe4&t=619s) - A gridish pattern using flexbox is awesome!
+- [Responsive Font-size](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/) - Using clamp for a fluid responsiveness.
 
 ## Author
 
