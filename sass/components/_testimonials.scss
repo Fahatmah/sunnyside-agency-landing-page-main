@@ -1,0 +1,97 @@
+@use '../abstracts/' as *;
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial__container {
+  @include center;
+  flex-direction: column;
+  gap: 4rem;
+  margin-block: 3.5rem 4.5rem;
+
+  .testimonial__header {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: clamp(1.125rem, 0.8813rem + 1.0833vw, 1.45rem);
+  }
+
+  .clients__testimonials {
+    @include center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    width: min(100% - 0rem, 73rem);
+    margin-inline: auto;
+
+    & .client:nth-child(1),
+    & .client:nth-child(3) {
+      align-self: flex-start;
+      justify-content: center;
+    }
+
+    & > * {
+      flex: 1 1 20rem;
+      @include center;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      padding-inline: 1.5rem;
+
+      .image__wrapper {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .texts__wrapper {
+        @include center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .testimonial__text {
+          line-height: 1.8;
+          // width: 21.8rem;
+          width: min(100% - 0rem, 21.8rem);
+        }
+
+        .clients__info {
+          @include center;
+          flex-direction: column;
+          gap: 0.7rem;
+
+          // .clients__name {
+          //   font-size: clamp(1.125rem, 1.0282rem + 0.4131vw, 1.4rem);
+          // }
+
+          // .clients__occupation {
+          //   font-size: clamp(0.88rem, 0.8025rem + 0.3305vw, 1.1rem);
+          // }
+        }
+      }
+    }
+  }
+}
+
+@include t-lg {
+  .testimonial__container {
+     margin-block: 9rem;
+     gap: 5rem;
+
+    .clients__testimonials {
+      gap: 0;
+
+      .client {
+        padding-inline: 0;
+        gap: 3.8rem;
+
+        .texts__wrapper {
+          gap: 4rem;
+        }
+      }
+    }
+  }
+}
+

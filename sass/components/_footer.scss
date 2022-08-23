@@ -1,0 +1,71 @@
+@use '../abstracts/' as *;
+
+.footer__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: 3rem 4rem;
+
+  .footer__logo {
+    width: 10rem;
+    filter: brightness(0) invert(35%) sepia(95%) saturate(276%)
+      hue-rotate(116deg) brightness(88%) contrast(85%);
+  }
+
+  .sunnyside__links,
+  .sunnyside__social-media {
+    display: flex;
+  }
+
+  .sunnyside__links {
+    margin-top: 2rem;
+    gap: 4.5rem;
+
+    li {
+      a {
+        color: #428677;
+        font-size: calc(var(--fs-300) + 0.1rem);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .sunnyside__social-media {
+    margin-top: 5rem;
+    gap: 2.4rem;
+
+    a {
+      img {
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+          filter: invert(1) brightness(10);
+        }
+      }
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #428677;
+    font-size: var(--fs-300);
+
+    a {
+      color: #428677;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      text-decoration-thickness: 2px;
+      font-family: var(--ff-fraunces);
+    }
+  }
+}

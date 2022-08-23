@@ -1,0 +1,151 @@
+:root {
+  // Primary Colors
+
+	--p-1: hsl(51, 100%, 49%);  // learn more underline / contact button background color
+	--p-3: hsl(7, 99%, 70%);    // learn more underline
+	--p-5: hsl(167, 44%, 70%);  // footer background
+	--p-6: hsl(198, 62%, 26%);  // photography text 
+	--p-8: hsl(167, 40%, 24%);  // graphic design text / footer text
+
+	// Neutral Colors
+
+	--n-1: hsl(0, 0%, 100%);    // testimonial background / nav texts desktop / contact button background color
+	--n-2: hsl(210, 4%, 67%);   // testimonial header
+	--n-3: hsl(232, 10%, 55%);  // light gray texts / nav texts mobile
+	--n-4: hsl(213, 9%, 39%);   // gray texts
+	--n-5: hsl(212, 27%, 19%);  // headings
+
+	--ff-barlow: 'Barlow', sans-serif;
+	--ff-fraunces: 'Fraunces', serif;
+
+	--fw-semi-bold: 600;
+	--fw-bold: 700;
+	--fw-black: 900;
+
+  --fs-300: 0.880rem;   // occupations text
+  --fs-400: 0.950rem;
+  --fs-450: 1.125rem; // body texts
+  --fs-500: 1.6rem;   // graphic design & photography text
+  --fs-650: 2.1rem;   // sub headings
+  --fs-750: 2.5rem;   // heading mobile
+  --fs-900: 8.5rem;   // heading desktop
+
+  --fs-body: var(--fs-450);
+  --fs-heading: var(--fs-750);
+
+  --ff-body: var(--ff-barlow);
+  --ff-heading: var(--ff-fraunces);
+  --ff-txt: var(--ff-barlow);
+
+  --nav-width: min(100% - 3rem, 85rem);
+
+  --outline: 1px solid black;
+}
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+}
+
+// utility classes
+
+.p-6 {
+  color: var(--p-6);
+}
+
+.p-8 {
+  color: var(--p-8);
+}
+
+.n-1-txt {
+  color: var(--n-1);
+}
+
+.n-2 {
+  color: var(--n-2);
+}
+
+.n-3 {
+  color: var(--n-3);
+}
+
+.n-4 {
+  color: var(--n-4);
+}
+
+.n-5 {
+  color: var(--n-5);
+}
+
+.n-1-bg {
+  background-color: var(--n-1);
+}
+
+.p-1 {
+  background-color: var(--p-1);
+}
+
+.p-3 {
+  background-color: var(--p-3);
+}
+
+.p-5 {
+  background-color: var(--p-5);
+}
+
+.ff-barlow {
+  font-family: var(--ff-barlow);
+}
+
+.ff-fraunces {
+  font-family: var(--ff-fraunces);
+}
+
+.fw-sm-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-black {
+  font-weight: var(--fw-black);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-650 {
+  // font-size: var(--fs-650);
+ font-size: clamp(2.1rem, 1.9239rem + 0.7512vw, 2.6rem);
+}
+
+.fs-750 {
+  font-size: var(--fs-750);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.fs-heading {
+  font-size: clamp(var(--fs-heading), 2.1303rem + 1.5775vw, 3.55rem);
+}
+
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.ff-txt {
+  font-family: var(--ff-txt);
+}

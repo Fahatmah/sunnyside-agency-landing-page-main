@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-width">
+        <img src="assets/logo.svg" alt="Sunnyside" class="header_logo" />
+        <img src="/assets/icon-hamburger.svg" alt="" class="menu-open" />
+        <div class="mobile-nav-container / n-1-bg">
+          <ul class="mobile-nav">
+            <li><a href="#" class="n-3">About</a></li>
+            <li><a href="#" class="n-3">Services</a></li>
+            <li><a href="#" class="n-3">Projects</a></li>
+            <li><a href="#" class="p-1 / n-5 / ff-fraunces">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header_content">
+        <h1 class="ff-heading / n-1-txt / fs-heading / fw-black">
+          WE ARE CREATIVES
+        </h1>
+        <img src="/assets/icon-arrow-down.svg" alt="" class="arrow-down" />
+      </div>
+    </header>
+
+    <main>
+      <div class="boxes">
+        <div class="egg"></div>
+        <div class="brand / n-1-bg">
+          <h2 class="n-5 / fs-650 / fw-black / ff-fraunces">
+            Transform your brand
+          </h2>
+          <p class="n-3">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#" class="n-5 / ff-fraunces / fw-black">LEARN MORE</a>
+        </div>
+        <div class="glass"></div>
+        <div class="audience / n-1-bg">
+          <h2 class="n-5 / fs-650 / fw-black / ff-fraunces">
+            Stand out to the right audience
+          </h2>
+          <p class="n-3">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="n-5 / ff-fraunces / fw-black">LEARN MORE</a>
+        </div>
+
+        <div class="graphic / p-8">
+          <div class="text__container">
+            <h3 class="fs-500 / fw-black / ff-fraunces">Graphic design</h3>
+            <p class="fs-400">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+
+        </div>
+        <div class="photography / p-6">
+          <div class="text__container">
+            <h3 class="fs-500 / fw-black / ff-fraunces">Photography</h3>
+            <p class="fs-400">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial__container">
+          <h4
+            class="testimonial__header / n-2 / ff-fraunces / fw-bold / fs-400">
+            Client testimonials
+          </h4>
+          <div class="clients__testimonials">
+            <!-- Client One-->
+            <div class="client">
+              <div class="image__wrapper">
+                <img src="/assets/image-emily.jpg" alt="" />
+              </div>
+              <div class="texts__wrapper">
+                <p class="testimonial__text / n-4">
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
+                </p>
+                <div class="clients__info">
+                  <p class="clients__name / n-5 / ff-fraunces / fw-black">
+                    Emily R.
+                  </p>
+                  <p class="clients__occupation / fs-300 / n-2">
+                    Marketing Director
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Two-->
+            <div class="client">
+              <div class="image__wrapper">
+                <img src="/assets/image-thomas.jpg" alt="" />
+              </div>
+              <div class="texts__wrapper">
+                <p class="testimonial__text / n-4">
+                  Sunnyside’s enthusiasm coupled with their keen interest in our
+                  brand’s success made it a satisfying and enjoyable experience.
+                </p>
+                <div class="clients__info">
+                  <p class="clients__name / n-5 / ff-fraunces / fw-black">
+                    Thomas S.
+                  </p>
+                  <p class="clients__occupation / fs-300 / n-2">
+                    Chief Operating Officer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Three-->
+            <div class="client">
+              <div class="image__wrapper">
+                <img src="/assets/image-jennie.jpg" alt="" />
+              </div>
+              <div class="texts__wrapper">
+                <p class="testimonial__text / n-4">
+                  Incredible end result! Our sales increased over 400% when we
+                  worked with Sunnyside. Highly recommended!
+                </p>
+                <div class="clients__info">
+                  <p class="clients__name / n-5 / ff-fraunces / fw-black">
+                    Jennie F.
+                  </p>
+                  <p class="clients__occupation / fs-300 / n-2">
+                    Business Owner
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__images">
+        <!-- mobile images -->
+        <img src="/assets/mobile/image-gallery-milkbottles.jpg" alt="" class="mobile__picture" />
+        <img src="/assets/mobile/image-gallery-orange.jpg" alt="" class="mobile__picture" />
+        <img src="/assets/mobile/image-gallery-cone.jpg" alt="" class="mobile__picture" />
+        <img src="/assets/mobile/image-gallery-sugar-cubes.jpg" alt="" class="mobile__picture" />
+        
+        <!-- desktop images -->
+        <img src="/assets/desktop/image-gallery-milkbottles.jpg" alt="" class="desktop__picture" />
+        <img src="/assets/desktop/image-gallery-orange.jpg" alt="" class="desktop__picture" />
+        <img src="/assets/desktop/image-gallery-cone.jpg" alt="" class="desktop__picture" />
+        <img src="/assets/desktop/image-gallery-sugarcubes.jpg" alt="" class="desktop__picture" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__container / p-5">
+        <img src="/assets/logo.svg" alt="Sunnyside" class="footer__logo">
+        <ul class="sunnyside__links">
+          <li><a href="#" class="p-8">About</a></li>
+          <li><a href="#" class="p-8">Services</a></li>
+          <li><a href="#" class="p-8">Projects</a></li>
+        </ul>
+        <ul class="sunnyside__social-media">
+          <li>
+            <a href="#" aria-label="Go to Sunnyside's Facebook">
+              <img src="/assets/icon-facebook.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Go to Sunnyside's Instagram">
+              <img src="/assets/icon-instagram.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Go to Sunnyside's Twitter">
+              <img src="/assets/icon-twitter.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Go to Sunnyside's Pinterest">
+              <img src="/assets/icon-pinterest.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="attribution">
+            Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor</a>. 
+            Coded by <a href="https://www.frontendmentor.io/profile/Fahatmah">Fahatmah</a>.
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>

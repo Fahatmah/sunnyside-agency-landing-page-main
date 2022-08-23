@@ -1,0 +1,42 @@
+@mixin x-sm {
+	@media only screen and (min-width: 28.125rem) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media only screen and (min-width: 36.4375rem) {
+		@content;
+	}
+}
+
+@mixin img-sm {
+	@media only screen and (min-width: 46.875rem) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media only screen and (min-width: 48rem) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media only screen and (min-width: 64rem) {
+		@content;
+	}
+}
+
+// testimonial section only
+@mixin t-lg { 
+	@media only screen and (min-width: 69.5rem) {
+		@content;
+	}
+}
+
+@mixin x-lg {
+	@media only screen and (min-width: 90rem) {
+		@content;
+	}
+}
